@@ -28,9 +28,9 @@ const { Vec3 } = require('vec3');
 // Configuration
 // ---------------------------------------------------------------------------
 const CONFIG = {
-  host: process.env.MC_HOST || 'localhost',
-  port: parseInt(process.env.MC_PORT || '25565', 10),
-  username: process.env.MC_USERNAME || 'StealthBot',
+  host: process.env.MC_HOST || 'Notzz_aahil.aternos.me',
+  port: parseInt(process.env.MC_PORT || '58642', 10),
+  username: process.env.MC_USERNAME || 'pro_ninja_aahil',
   auth: process.env.MC_AUTH || 'offline',
   version: process.env.MC_VERSION || false, // false = auto-detect
   allowedUsers: (process.env.MC_ALLOWED_USERS || '')
