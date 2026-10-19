@@ -1,0 +1,25 @@
+name: Run 24/7 Minecraft Bot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */5 * * *' # Har 5 ghante mein auto-restart taaki bot 24/7 chalta rahe
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Start Minecraft Bot
+        run: npm start
